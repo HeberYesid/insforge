@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color-scheme: dark;
+  }
+
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-screen;
+    background:
+      radial-gradient(circle at top left, rgba(8, 145, 178, 0.18), transparent 32%),
+      radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 28%),
+      linear-gradient(180deg, #020617 0%, #050816 48%, #020617 100%);
+    color: #ffffff;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.24);
+    color: #f8fafc;
+  }
+}
